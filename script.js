@@ -7,16 +7,11 @@ const totalTestimonials = testimonials.length;
 
 function showNextTestimonial() {
     currentIndex = (currentIndex + 1) % totalTestimonials;
-    carousel.style.transform = `translateX(-${currentIndex * 50}%)`;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-setInterval(showNextTestimonial, 3000);
+setInterval(showNextTestimonial, 3500);
 
-// Form Submission Message
-document.getElementById('project-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Your project request has been submitted! We will get in touch soon.');
-});
 
 
 /*```````````````````````````````````````````````````````````*/
@@ -76,7 +71,7 @@ function updateCounter() {
 }
 
 // Call updateCounter every 100 milliseconds
-setInterval(updateCounter, 200);
+setInterval(updateCounter, 300);
 
 //````````````````````````HEADER````````````````````````````
 const hamburger = document.querySelector('.hamburger');
