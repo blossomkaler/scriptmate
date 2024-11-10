@@ -58,7 +58,7 @@ function typeEffect() {
 
 // Start the typing effect
 typeEffect();
-/*`````````````````````````````````````````````````````*/
+/*`````````````````````````````````````````````````````
 let count = 50;
 const countElement = document.getElementById("project-count");
 
@@ -71,7 +71,7 @@ function updateCounter() {
 }
 
 // Call updateCounter every 100 milliseconds
-setInterval(updateCounter, 300);
+setInterval(updateCounter, 300);*/
 
 //````````````````````````HEADER````````````````````````````
 const hamburger = document.querySelector('.hamburger');

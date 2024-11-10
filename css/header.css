@@ -129,9 +129,9 @@ body.fixed-nav nav {
   /*`````````````````RESPONSIVENESS`````````````````````````*/
 
 @media only screen and (max-width: 1130px){
-    .company .logo{
-        display: none;
-    }
+.company{
+    gap: 0.5rem;
+}
     
 }
 @media only screen and (max-width: 950px){
@@ -149,8 +149,8 @@ body.fixed-nav nav {
 
 
     nav{
-        padding-block: 0.7rem;
-        font-size: 0.7rem;
+        padding-block: 0.5rem;
+        font-size: 1rem;
     }
 
     .navigation{
