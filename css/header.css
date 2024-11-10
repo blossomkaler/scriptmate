@@ -1,0 +1,230 @@
+/*``````````````````````NAVBAR```````````````````````````*/
+:root{
+            
+    --dark-blue1:#4A628A;
+    --dark-blue2:#7AB2D3;
+    --light-blue1: #B9E5E8;
+    --light-blue2:#DFF2EB;
+    --blue:#e8f4fb;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: max(1rem, 8vw);
+    backdrop-filter: blur(10px);
+    background-color: var(--dark-blue1);
+    color: white;
+    font-weight: 300;
+    padding-block: 1rem;
+    z-index: 200000;
+    margin-bottom: 2rem;
+}
+
+.company{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.company .logo img{
+    height: 3rem;
+    width: 3rem;
+    border-radius:50% ;
+}
+
+.company .name {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.navigation li{
+    list-style: none;
+}
+.navigation li:hover{
+    scale: 1.5;
+    color: var(--dark-blue2) ;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: white;
+}
+.navigation li a:hover{
+    color: var(--logo-clr);
+
+}
+
+.nav-item.hidden{
+    transform: translateY(0);
+    transform: translateX(-100%);
+    transition-duration: 0.2s;
+}
+
+.nav-item.show{
+    transform: translateX(0);
+}
+.cross{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger img{
+    height: 3rem;
+}
+/*```````````````````PRODUCT DROPDOWN``````````````````````*/
+.navigation li{
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.dropdown{
+    font-size: 1.2rem;
+    background-color: rgba(22, 24, 25, 0.8);
+    position: absolute;
+    width: 10rem;
+    display: none;
+    z-index: 60000000;
+}
+
+.dropdown li{
+    border-bottom: 1px solid rgb(77, 75, 75);
+    padding: 0.7rem;
+}
+
+.navigation li:hover ul.dropdown{
+    display: block;
+}
+
+/*````````````````````STICKY NAV`````````````````````````*/
+body.fixed-nav nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+
+/*````````````````````WHATSAPP CHAT`````````````````````````*/
+
+.whatsapp-chat{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 500000;
+
+}
+
+.whatsapp-chat img{
+    height: 4rem;
+    border-radius: 50%;
+
+    -webkit-box-shadow: -3px 5px 31px 3px rgba(37,211,102,1);
+    -moz-box-shadow: -3px 5px 31px 3px rgba(37,211,102,1);
+    box-shadow: -3px 5px 31px 3px rgba(37,211,102,1);
+}
+
+.whatsapp-chat:hover {
+    scale: 1.2;
+}
+
+@media only screen and (max-width: 1250px){
+    footer{
+        padding-inline: 2rem;
+    }
+
+}
+
+
+  /*`````````````````RESPONSIVENESS`````````````````````````*/
+
+@media only screen and (max-width: 1130px){
+    .company .logo{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 950px){
+
+    .nav-item.show{
+        transition-duration: 1s ;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active{
+        display: none;
+    }
+
+
+    nav{
+        padding-block: 0.7rem;
+        font-size: 0.7rem;
+    }
+
+    .navigation{
+        z-index: 500000;
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        right: 100vw;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 60vw;
+        
+        background-color: rgba(22, 24, 25, 0.97);
+        backdrop-filter: blur(10px);
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        font-size: 1rem;
+        transition: 1s;
+    }
+
+    .navigation.active{
+        display: flex;
+        right: 40vw;
+    }
+
+    .dropdown{
+        font-size: 0.8rem;
+        width: 8rem;
+        margin-top: 0.3rem; 
+        display: block;
+        position: static;
+        background-color: rgba(242, 245, 246, 0.1);
+        margin: 0.5rem 0 0 0.5rem;
+    }
+
+    .dropdown li{
+        padding: 0.6rem;
+    }
+
+    .cross{
+        display: block;
+    }
+
+    .navigation .home{
+        padding-top: 1rem;
+    }
+
+    .navigation li a{
+        text-align: left;
+    }
+
+}

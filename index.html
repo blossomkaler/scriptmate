@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptMate</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="nav-wrap">
+        <nav>
+            <div class="company">
+                <div class="logo"><img src="/images/logo.png" alt="logo"></div>
+                <div class="name">ScriptMate</div>
+            </div>
+        
+            <ul class="navigation">
+                <div class="cross"><i class="fa-solid fa-xmark"></i></div>
+                
+                <li class="nav-item home hidden"> <a href="index.html">Home</a> </li>
+                <li class="nav-item hidden"> <a href="#services">Services</a> </li>
+                <li class="nav-item hidden"> <a href="#testimonials">Testimonials</a> </li>
+                <li class="nav-item hidden"> <a href="#contact">Contact us</a> </li>
+            </ul>
+    
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+
+    </div>
+
+
+    <!-- Intro Section with Form -->
+    <section id="intro">
+        <div class="intro-img">
+
+            <img src="/images/new-intro.webp" alt="">
+        </div>
+
+        <div class="intro-content">
+            <h1>Script<span id="typing-effect"></span> <span class="bar">|</span> </h1>
+            
+            <p>" Your Trusted Academic Partner ! "</p>
+            <form id="project-form">
+                Get Your Project Done!
+                <input type="text" placeholder="Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <textarea placeholder="Project Details" required></textarea>
+                <input type="date" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+    </section>
+    
+    <section id="services" class="services-section">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+        <h3>Research Paper</h3>
+        <p class="description">Comprehensive support for research paper writing.</p>
+    </div>
+    <div class="service-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <h3>Assignments</h3>
+      <p class="description">Expert help for all types of assignments, customized to your requirements.</p>
+    </div>
+    <div class="service-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <h3>Projects</h3>
+      <p class="description">Guidance and support for projects from start to finish.</p>
+    </div>
+    <div class="service-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <h3>Report Writing</h3>
+      <p class="description">Professional assistance in writing detailed and structured reports.</p>
+    </div>
+    <div class="service-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <h3>Thesis Consultation</h3>
+      <p class="description">Comprehensive support for thesis work, from research to editing.</p>
+    </div>
+    <div class="service-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <h3>Term paper</h3>
+      <p class="description">Comprehensive support for thesis work, from research to editing.</p>
+    </div>
+    <div class="service-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <h3>Power Point Presentation</h3>
+      <p class="description">Comprehensive support for thesis work, from research to editing.</p>
+    </div>
+    <div class="service-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+      <h3>Paraphrasing/ Plagiarism Removal</h3>
+      <p class="description">Comprehensive support for thesis work, from research to editing.</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Why to Choose Us?</h2>
+        <div class="feature">
+            <img src="/images/affordable.jpg" alt="Affordability">
+            Affordability
+        </div>
+        <div class="feature">
+            <img src="/images/fast-del.jpg" alt="Fast Delivery">
+            Fast Delivery
+        </div>
+        <div class="feature">
+            <img src="/images/plag.png" alt="plag">
+            Plagiarism Free Work
+        </div>
+        <div class="feature">
+            <img src="/images/correct.webp" alt="correction">
+            Unlimited Corrections
+        </div>
+        <div class="feature">
+            <img src="/images/expert.jpg" alt="expert">
+            Written by Experts 
+        </div>
+    </section>
+
+    <!-- Projects Completed Section -->
+    <section id="projects">
+        <div>
+            <h2 class="counter">
+                <span id="project-count">40</span>+ <br>Projects Completed
+            </h2>
+            <p>Over 50 successful projects delivered to students worldwide.</p>
+
+        </div>
+        <img src="/images/project.webp" alt="Projects Completed Image">
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section id="testimonials">
+        <h2>What Our Clients Say !</h2>
+        <div class="carousel">
+            <div class="testimonial">
+                <img src="/images/testimonial.jpg" alt="Student A">
+                "Fast and reliable service!" <br> - Student A
+            </div>
+            <div class="testimonial">
+                <img src="/images/testimonial.jpg" alt="Student B">
+                "Helped me meet my deadline!" <br> - Student B
+            </div>
+            <div class="testimonial">
+                <img src="/images/testimonial.jpg" alt="Student C">
+                "Great value for money." <br> - Student C
+            </div>
+            <div class="testimonial">
+                <img src="/images/testimonial.jpg" alt="Student C">
+                "Great value for money."<br> - Student D
+            </div>
+            <div class="testimonial">
+                <img src="/images/testimonial.jpg" alt="Student C">
+                "High Quality Content."<br> - Student E
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-wrap">
+            <ul class="contact-details">
+
+                <li class="number"> <i class="fa-solid fa-phone"></i>
+                    +91 8920178199 
+                </li>
+                <li> <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:scriptmate@gmail.com">scriptmate@gmail.com</a> 
+                </li>
+                <li> <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/company/scriptmate/" target="_blank">Scriptmate</a> 
+                </li>
+            </ul>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56130.237720054276!2d76.97185656486528!3d28.445200116443768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19a942b79d9b%3A0x1347dbfad493a7d3!2sSector%209%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1731178886177!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <a class="whatsapp-chat" aria-label="Chat on WhatsApp" target="_blank" href="https://wa.me/8920178199">
+        <img alt="Chat on WhatsApp" src="/images/whatsapp.webp" />
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ScriptMate. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
