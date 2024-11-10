@@ -86,30 +86,6 @@ nav{
 .hamburger img{
     height: 3rem;
 }
-/*```````````````````PRODUCT DROPDOWN``````````````````````*/
-.navigation li{
-    position: relative;
-    cursor: pointer;
-    overflow: visible;
-}
-
-.dropdown{
-    font-size: 1.2rem;
-    background-color: rgba(22, 24, 25, 0.8);
-    position: absolute;
-    width: 10rem;
-    display: none;
-    z-index: 60000000;
-}
-
-.dropdown li{
-    border-bottom: 1px solid rgb(77, 75, 75);
-    padding: 0.7rem;
-}
-
-.navigation li:hover ul.dropdown{
-    display: block;
-}
 
 /*````````````````````STICKY NAV`````````````````````````*/
 body.fixed-nav nav {
@@ -187,7 +163,7 @@ body.fixed-nav nav {
         flex-direction: column;
         width: 60vw;
         
-        background-color: rgba(22, 24, 25, 0.97);
+        background-color: var(--dark-blue1);
         backdrop-filter: blur(10px);
         padding-left: 2rem;
         padding-top: 2rem;
