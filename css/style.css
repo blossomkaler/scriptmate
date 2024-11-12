@@ -393,6 +393,17 @@
                 width: 100%;
                display: none;
             }
+            #project-form {
+                width: 100vw;
+            }
+            #project-form iframe{
+                width: 75%;
+            }
+            
+            /* For other browsers */
+            #project-form iframe::-webkit-scrollbar {
+                display: none; /* Safari and Chrome */
+            }
 
 
             .intro-content{
@@ -417,12 +428,6 @@
             }
             .service-card h3{
             font-size: 1rem;
-            }
-
-            
-
-            #project-form iframe{
-                width: 95vw;
             }
 
  
